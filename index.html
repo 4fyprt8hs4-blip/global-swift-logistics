@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Global Swift Logistics provides shipment tracking and logistics services for businesses and individuals."
+    >
+
+    <title>Global Swift Logistics | Global Reach. Swift Delivery.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <div class="container header-content">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark">GS</span>
+
+                <span class="brand-text">
+                    <strong>GLOBAL SWIFT</strong>
+                    <small>LOGISTICS</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="mainNav"
+            >
+                ☰
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+
+                <a href="#home">Home</a>
+
+                <a href="#services">Our Services</a>
+
+                <a href="#about">About Us</a>
+
+                <a href="#tracking">Track Shipment</a>
+
+                <a href="#contact">Contact</a>
+
+                <a href="#tracking" class="nav-button">
+                    Track Package
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="eyebrow">
+                        YOUR TRUSTED LOGISTICS PARTNER
+                    </span>
+
+                    <h1>
+                        Global Reach.
+                        <span>Swift Delivery.</span>
+                    </h1>
+
+                    <p>
+                        Moving your packages, business, and ambitions
+                        forward with reliable logistics solutions.
+                        Track your shipment and stay informed every
+                        step of the way.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#tracking" class="button button-orange">
+                            Track Your Shipment
+                        </a>
+
+                        <a href="#services" class="button button-outline">
+                            Explore Our Services
+                        </a>
+
+                    </div>
+
+                    <div class="hero-points">
+                        <span>✓ Shipment visibility</span>
+                        <span>✓ Reliable delivery updates</span>
+                        <span>✓ Customer support</span>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="delivery-icon">📦</div>
+
+                    <h2>Your Shipment, Our Priority</h2>
+
+                    <p>
+                        Stay informed with shipment tracking and
+                        delivery updates.
+                    </p>
+
+                    <div class="delivery-route">
+
+                        <div class="route-point">
+                            <span class="route-dot"></span>
+
+                            <div>
+                                <strong>Shipment Created</strong>
+                                <small>Tracking begins here</small>
+                            </div>
+                        </div>
+
+                        <div class="route-line"></div>
+
+                        <div class="route-point">
+                            <span class="route-dot orange-dot"></span>
+
+                            <div>
+                                <strong>In Transit</strong>
+                                <small>Follow shipment progress</small>
+                            </div>
+                        </div>
+
+                        <div class="route-line"></div>
+
+                        <div class="route-point">
+                            <span class="route-dot gray-dot"></span>
+
+                            <div>
+                                <strong>Delivered</strong>
+                                <small>Final delivery confirmation</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Tracking Section -->
+        <section class="tracking-section" id="tracking">
+
+            <div class="container">
+
+                <div class="tracking-box">
+
+                    <div class="tracking-heading">
+
+                        <span class="eyebrow">
+                            SHIPMENT TRACKING
+                        </span>
+
+                        <h2>Where Is Your Package?</h2>
+
+                        <p>
+                            Enter your tracking number to view the
+                            latest shipment information.
+                        </p>
+
+                    </div>
+
+                    <form id="trackingForm" class="tracking-form">
+
+                        <label
+                            for="trackingNumber"
+                            class="visually-hidden"
+                        >
+                            Tracking number
+                        </label>
+
+                        <input
+                            type="text"
+                            id="trackingNumber"
+                            name="trackingNumber"
+                            placeholder="Enter your tracking number"
+                            autocomplete="off"
+                            required
+                        >
+
+                        <button
+                            type="submit"
+                            class="button button-orange"
+                        >
+                            Track Package
+                        </button>
+
+                    </form>
+
+                    <p
+                        id="trackingMessage"
+                        class="tracking-message"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Services Section -->
+        <section class="section" id="services">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">WHAT WE DO</span>
+
+                    <h2>Logistics Solutions That Move You Forward</h2>
+
+                    <p>
+                        Flexible shipping solutions designed to
+                        support individuals and businesses.
+                    </p>
+
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <div class="service-icon">✈️</div>
+
+                        <h3>International Shipping</h3>
+
+                        <p>
+                            Shipping solutions for moving packages
+                            between countries, subject to service
+                            availability.
+                        </p>
+
+                    </article>
+
+                    <article class="service-card">
+
+                        <div class="service-icon">🚚</div>
+
+                        <h3>Domestic Delivery</h3>
+
+                        <p>
+                            Delivery services for packages travelling
+                            within supported locations.
+                        </p>
+
+                    </article>
+
+                    <article class="service-card">
+
+                        <div class="service-icon">📦</div>
+
+                        <h3>Business Logistics</h3>
+
+                        <p>
+                            Shipment coordination to help businesses
+                            manage their delivery needs.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+
+            <div class="container about-content">
+
+                <div class="about-visual">
+
+                    <div class="about-symbol">GS</div>
+
+                    <span>GLOBAL SWIFT LOGISTICS</span>
+
+                </div>
+
+                <div class="about-text">
+
+                    <span class="eyebrow">ABOUT OUR COMPANY</span>
+
+                    <h2>Moving Deliveries Forward</h2>
+
+                    <p>
+                        Global Swift Logistics is built around a
+                        simple goal: making shipment information
+                        easier to access and delivery coordination
+                        easier to manage.
+                    </p>
+
+                    <p>
+                        Our website will allow customers to look up
+                        shipments, review recorded tracking updates,
+                        and contact customer support from one place.
+                    </p>
+
+                    <a href="#tracking" class="button button-purple">
+                        Track a Shipment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+
+            <div class="container contact-content">
+
+                <div>
+                    <span class="eyebrow">WE ARE HERE TO HELP</span>
+
+                    <h2>Need Assistance With a Shipment?</h2>
+
+                    <p>
+                        Our customer support options will help you
+                        find shipment information and get assistance.
+                    </p>
+                </div>
+
+                <a href="#tracking" class="button button-orange">
+                    Track Your Package
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="brand footer-logo">
+
+                    <span class="brand-mark">GS</span>
+
+                    <span class="brand-text">
+                        <strong>GLOBAL SWIFT</strong>
+                        <small>LOGISTICS</small>
+                    </span>
+
+                </a>
+
+                <p>Global Reach. Swift Delivery.</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#services">Services</a>
+
+                <a href="#about">About</a>
+
+                <a href="#tracking">Tracking</a>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; <span id="currentYear"></span>
+                Global Swift Logistics. All rights reserved.
+            </p>
+
+            <p>
+                Shipment information is subject to verification.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
